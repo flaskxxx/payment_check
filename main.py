@@ -30,7 +30,7 @@ TABLE_DATA = [
 
 pdf = FPDF(format='letter', unit='in')
 pdf.add_page()
-pdf.add_font('DejaVuSansCondensed', "B", fname='./DejaVuSansCondensed-Bold.ttf')
+pdf.add_font('DejaVuSansCondensed', "B", fname='./fonts/DejaVuSansCondensed-Bold.ttf')
 pdf.set_font("DejaVuSansCondensed", 'B', size=10)
 with pdf.table(text_align="LEFT") as table:
     for data_row in TABLE_DATA:
